@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm install --save-dev mocha-junit-reporter@2.0.2 nyc@15.1.0
-    npm audit fix
+    npm audit
     npm run build
     npm test
   displayName: 'npm install and test'
