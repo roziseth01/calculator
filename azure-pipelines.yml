@@ -16,6 +16,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm audit
+    npm install --save-dev mocha-junit-reporter@2.0.2 nyc@15.1.0 mocha@9.1.3
+    npm update lodash --depth 7 
+    npm audit fix
     npm test
   displayName: 'npm install and test'
